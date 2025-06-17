@@ -21,7 +21,7 @@ const QuickTransfer: React.FC = () => {
             <Text tag='h3' className="text-white text-lg font-semibold">Quick Transfer</Text>
             {/* Avatars for recent or favorite contacts and an add new button */}
 
-            <div className="flex items-center gap-4 mb-4 mt-6">
+            <div className="flex items-center gap-4 md:max-lg:gap-2 mb-4 mt-6">
                 {/* Example avatars */}
                 <ImgContainer
                     src={Female}
@@ -35,8 +35,10 @@ const QuickTransfer: React.FC = () => {
                 />
 
                 {/* Add New contact button */}
-                <div className="w-12 h-12 rounded-full border-2 border-dashed border-purple-800 flex items-center justify-center text-purple-400 text-xl">
-                    <Plus size={24} color="white" />
+                <div className="w-[48px] h-[48px]">
+                    <div className="w-[48px] h-[48px] rounded-full border-2 border-dashed border-purple-800 flex items-center justify-center">
+                        <Plus className="w-[24px] h-[24px]" color="white" />
+                    </div>
                 </div>
             </div>
             {/* Amount input section */}
