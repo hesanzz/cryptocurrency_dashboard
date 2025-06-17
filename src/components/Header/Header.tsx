@@ -17,12 +17,12 @@ const Header = () => {
 
             <div className="flex items-center space-x-10">
                 <BackIcon />
-                <Text tag='h1' className="text-white text-2xl font-bold">
+                <Text tag='h1' className="text-white text-2xl font-bold max-sm:hidden">
                     Home
                 </Text>
             </div>
             <div className="flex items-center space-x-8">
-                <div className="relative bg-dark-card rounded-full w-64 h-10 mt-2">
+                <div className="relative bg-dark-card rounded-full w-64 h-10 mt-2 max-md:hidden">
                     <Input type="text" placeholder="Search" className="bg-dark-card text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:bg-dark-accent hover:bg-dark-accent rounded-full px-4 py-2 w-64" />
                     <Search className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
                 </div>

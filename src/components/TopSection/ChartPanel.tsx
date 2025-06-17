@@ -26,11 +26,11 @@ const ChartPanel: React.FC = () => {
         >
             {/* Top controls: Dropdown for currency pair and buttons for time periods */}
 
-            <div className="flex justify-between items-center mb-4">
-                <div className="p-2 bg-dark-secondary text-white rounded-lg">
+            <div className="flex justify-between max-sm:flex-col items-center mb-4">
+                <div className="p-2 bg-dark-secondary text-white rounded-lg  max-sm:mb-2">
                     {/* Dropdown for selecting currency pair */}
 
-                    <Dropdown options={options} className={"flex items-center bg-dark-secondary font-semibold text-white"} />
+                    <Dropdown options={options} className="flex items-center bg-dark-secondary font-semibold text-white" />
                 </div>
                 <div className="flex gap-2">
                     {periods.map((period) => (
