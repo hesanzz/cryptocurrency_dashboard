@@ -1,61 +1,8 @@
 // This file contains constants used throughout the application
 
-import Bitcoin from "../assets/bitcoin.png";
-import Ethereum from "../assets/ethereum.png";
-import Litecoin from "../assets/litecoin.png";
-import Increment from "../assets/increment_arrow.png";
-import Decrement from "../assets/decrement_arrow.png";
+import { Bitcoin, Decrement, Ethereum, Increment, Litecoin } from "./image";
+import type { CryptoAsset, GraphPoint, MarketItem, MarketOverviewDataPoint } from "./types";
 
-// The GraphPoint interface defines the structure of a point in the graph
-// It includes properties for name, uv, and pv
-export interface GraphPoint {
-    name: string;
-    uv: number;
-    pv: number;
-}
-
-// The ChartDataPoint interface defines the structure of a data point in the chart
-// It includes properties for time and value, where time is a string and value is a number
-interface ChartDataPoint {
-    time: string;
-    value: number;
-}
-
-// The CryptoAsset interface defines the structure of a cryptocurrency asset
-// It includes properties for id, symbol, image, name, price, change percentage, arrow
-interface CryptoAsset {
-    id: number;
-    symbol: string;
-    image: string;  // Image URL for the cryptocurrency
-    name: string;
-    price: number;
-    change: number;
-    arrow: string; // Image representing the change direction (increment/decrement)
-    pair: string;
-    chartData: ChartDataPoint[];
-    strokeColor: string;
-}
-
-// The MarketOverviewDataPoint interface defines the structure of a data point in the market overview
-// It includes properties for time, bitcoin price, ethereum price, litecoin price, and a
-export interface MarketOverviewDataPoint {
-    time: string;
-    bitcoin: number;
-    ethereum: number;
-    litecoin: number;
-    name: string;
-}
-
-// The MarketItem interface defines the structure of a market item
-// It includes properties for the symbol, name, last price, and change percentage
-export interface MarketItem {
-    symbol: string;
-    name: string;
-    lastPrice: number;
-    change: number;
-}
-
-{/*######################################################################################################################*/ }
 
 //The graph points data used in the chartPanel component
 export const graphPoints: GraphPoint[] = [

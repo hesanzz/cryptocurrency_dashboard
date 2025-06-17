@@ -1,7 +1,7 @@
 import { Line } from "recharts";
 
 import { motion } from "framer-motion";
-import LineChartWrapper from "../Atoms/LineChartWrapper";
+import LineChartWrapper from "../Molecules/LineChartWrapper";
 import ImgContainer from "../Atoms/ImgContainer";
 
 interface CryptoCardProps {

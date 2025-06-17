@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Dropdown from "../Atoms/Dropdown";
 import { graphPoints } from "../../constants";
 import Button from "../Atoms/Button";
-import LineChartWrapper from "../Atoms/LineChartWrapper";
+import LineChartWrapper from "../Molecules/LineChartWrapper";
 import { Line } from "recharts";
 
 type Range = "1D" | "1W" | "1M" | "ETH/USD" | "BTC/USD";

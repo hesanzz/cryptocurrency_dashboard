@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import Dropdown from "../Atoms/Dropdown";
 import Text from "../Atoms/Text";
-import LineChartWrapper from "../Atoms/LineChartWrapper";
+import LineChartWrapper from "../Molecules/LineChartWrapper";
 import { Line } from "recharts";
 import { marketOverviewData } from "../../constants";
 
