@@ -1,54 +1,67 @@
-# React + TypeScript + Vite
+# 🚀 Cryptocurrency Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern cryptocurrency dashboard built with **Vite**, **React**, **TypeScript**, and **Tailwind CSS**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 Tech Stack
 
-## Expanding the ESLint configuration
+| Tool/Library | Purpose |
+|--------------|---------|
+| **Vite** | Fast dev server and build tool |
+| **React + TypeScript** | Frontend framework with type safety |
+| **Tailwind CSS** | Utility-first styling |
+| **Lucide React** | Open-source icons |
+| **Framer Motion** | Animations for divs and buttons |
+| **Recharts** | Graphs and charts |
+| **FlatIcons** | Source for images |
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🎨 Design & Theming
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- All **theme colors** are defined in `tailwind.config.js`.
+- The UI is responsive and styled exclusively with Tailwind utility classes.
+- Icons are imported from **Lucide React** for a cohesive visual style.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 📁 Project Structure
+
+src/
+├── components/ # Reusable UI components
+├── atoms/ #For making reusable items, like button, image        container 
+├── Molecules/ # Reusable UI items like custom icons.
+├── constants/ # All static data/config constants
+├── assets/ # Images from FlatIcons and other static files
+├── App.tsx # Root component
+├── main.tsx # Entry point
+├── index.css # Tailwind directives
+├── tailwind.config.js # Theme configuration
+
+
+---
+
+## ⚙️ Key Features
+
+✅ Fast Vite-powered setup  
+✅ Type-safe React components  
+✅ Tailwind for flexible and scalable styling  
+✅ Framer Motion for smooth animations  
+✅ Lucide React icons  
+✅ Recharts for responsive and dynamic graphs  
+✅ Constants are centralized in a single config file for easy maintenance
+
+---
+
+## 🔗 How to Run
+
+```bash
+# Install dependencies
+npm install
+
+# Start the dev server
+npm run dev
+
+# Build for production
+npm run build
