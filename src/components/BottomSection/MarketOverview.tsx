@@ -11,7 +11,7 @@ const MarketOverview: React.FC = () => {
     const periods: Range[] = ["Hourly", "Daily", "Weekly", "Monthly", "Yearly"];
     return (
         <motion.div
-            className="flex-1 h-full bg-dark-card rounded-xl p-6 border border-gray-600 "
+            className="h-full bg-dark-card rounded-xl p-6 border border-gray-600 "
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.3, delay: 0.2 }}

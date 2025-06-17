@@ -2,6 +2,7 @@ import { Line } from "recharts";
 
 import { motion } from "framer-motion";
 import LineChartWrapper from "../Atoms/LineChartWrapper";
+import ImgContainer from "../Atoms/ImgContainer";
 
 interface CryptoCardProps {
     // Define any props you need for the CryptoCard component 
@@ -30,7 +31,7 @@ const CrytoCard = (props: CryptoCardProps) => {
             transition={{ duration: 0.3 }}
         >            {/* Coin icon */}
             <div className="absolute -top-8 left-1/2 transform -translate-x-1/2  p-2 rounded-full">
-                <img src={image} alt="icon" className="w-12 h-12" />
+                <ImgContainer src={image} alt="icon" className="w-12 h-12" />
             </div>
 
             {/* Pair */}
@@ -45,8 +46,8 @@ const CrytoCard = (props: CryptoCardProps) => {
                     className={`text-sm mt-1 ${change >= 0 ? "text-green-400" : "text-red-400"
                         } display flex items-center gap-1`}
                 >
-                    {change >= 0 ? <img src={arrow} alt="icon" className="w-4 h-4" />
-                        : <img src={arrow} alt="icon" className="w-4 h-4" />
+                    {change >= 0 ? <ImgContainer src={arrow} alt="icon" className="w-4 h-4" />
+                        : <ImgContainer src={arrow} alt="icon" className="w-4 h-4" />
                     }
                     {change.toFixed(1)}%
                 </div>

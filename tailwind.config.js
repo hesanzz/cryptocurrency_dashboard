@@ -10,9 +10,9 @@ export default {
                 dark: {
                     primary: '#1d1729',
                     secondary: '#1c1621',
-                    accent: '#3b4280',
+                    accent: '#241e2b',
                     surface: '#252759',
-                    card: '#764ba2',
+                    card: '#322d3d',
                     button: '#1e163d',
                 },
                 crypto: {
